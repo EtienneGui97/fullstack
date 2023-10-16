@@ -5,20 +5,26 @@ Cette documentation est une version abrégée, la documentation complète sur tr
 
 ## Table des matières
 
-1. [Structure d'une page](#structure-dune-page)
-2. [Elément HTML](#elément-html)
-3. [Attribut](#attribut)
-4. [Commentaire](#commentaire)
-5. [Titre](#titre)
-6. [Paragraphe](#paragraphe)
-7. [Barre horizontale](#barre-horizontale)
-8. [Retour à la ligne](#retour-à-la-ligne)
-9. [Style](#style)
-10. [Format des éléments](#format-des-éléments)
-11. [Liste](#liste)
-12. [Tableau](#tableau)
-13. [Lien](#lien)
-14. [Image](#image)
+# Table des matières
+
+- [Structure d'une page](#structure-dune-page)
+- [Élément HTML](#elément-html)
+- [Attribut](#attribut)
+- [Commentaire](#commentaire)
+- [Id](#id)
+- [Classe](#classe)
+- [Titre](#titre)
+- [Paragraphe](#paragraphe)
+- [Élément div](#elément-div)
+- [Barre horizontale](#barre-horizontale)
+- [Retour à la ligne](#retour-à-la-ligne)
+- [Style](#style)
+- [Format des éléments](#format-des-éléments)
+- [Liste](#liste)
+- [Tableau](#tableau)
+- [Lien](#lien)
+- [Image](#image)
+
 
 
 ## Structure d'une page 
@@ -69,7 +75,19 @@ Les commentaires sont ajoutés avec cette syntaxe:
 ```HTML
 <!-- Mon commentaire -->
 ```
+## Id
+L'attribut HTML id est utilisé pour spécifier un identifiant unique pour un élément HTML.
+Il ne peut pas avoir plus d'un élément avec le même identifiant dans un document HTML.
+```HTML
+<div id="maDiv">...</div>
+```
 
+## Classe
+L'attribut HTML class est utilisé pour spécifier une classe pour un élément HTML.
+Plusieurs éléments HTML peuvent partager la même classe.
+```HTML
+<div class="maClasse">...</div>
+```
 
 ## Titre
 Les titres utilisent les balises `<h1>` jusqu'à `<h6>`.
@@ -83,6 +101,18 @@ Les titres utilisent les balises `<h1>` jusqu'à `<h6>`.
 ```HTML
 <p>Paragraphe 1</p>
 <p>Paragraphe 2</p>
+```
+
+## Elément div
+L'élément `<div>` est un conteneur pour d'autres éléments HTML.
+
+```HTML
+<div class="maDiv">
+    <h2>Ceci est une boîte div</h2>
+    <p>
+        La balise div est utilisée pour regrouper des éléments HTML et appliquer des styles.
+    </p>
+</div>
 ```
 
 ## Barre horizontale
