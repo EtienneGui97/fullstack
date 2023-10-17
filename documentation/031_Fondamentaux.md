@@ -4,12 +4,13 @@ Ce document contient les fondamentaux HTML.
 1. [Introduction à HTML](#introduction-à-html)
 2. [Structure d'une page HTML](#structure-dune-page-html)
 3. [Eléments HTML](#eléments-html)
-4. [Liens et Ancres](#liens-et-ancres)
-5. [Images](#images)
-6. [Listes](#listes)
-7. [Tableaux](#tableaux)
-8. [Formulaires HTML](#formulaires-html)
-9. [Balises sémantiques](#balises-sémantiques)
+4. [Commentaires](#commentaires)
+5. [Liens et Ancres](#liens-et-ancres)
+6. [Images](#images)
+7. [Listes](#listes)
+8. [Tableaux](#tableaux)
+9. [Formulaires HTML](#formulaires-html)
+10. [Balises sémantiques](#balises-sémantiques)
 
 
 
@@ -69,6 +70,12 @@ Exemples :
 - `<select>` : Balise de menu déroulant.
 - `<option>` : Balise d'option dans un menu déroulant.
 - `<iframe>` : Balise d'iframe pour incorporer des contenus externes.
+
+## Commentaires
+Les commentaires sont ajoutés avec cette syntaxe:
+```HTML
+<!-- Mon commentaire -->
+```
 
 ## Liens et Ancres
 La navigation en HTML se fait grâce à la balise `<a>` et l'attribut `href`. La navigation peut se faire sur un lien externe ou un élément interne à la page (ancre).

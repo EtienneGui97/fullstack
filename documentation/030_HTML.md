@@ -7,25 +7,25 @@ Cette documentation est une version abrégée, la documentation complète sur tr
 1. [Introduction à HTML](031_Fondamentaux.md#introduction-à-html)
 2. [Structure d'une page HTML](031_Fondamentaux.md#structure-dune-page-html)
 3. [Eléments HTML](031_Fondamentaux.md#eléments-html)
-4. [Liens et Ancres](031_Fondamentaux.md#liens-et-ancres)
-5. [Images](031_Fondamentaux.md#images)
-6. [Listes](031_Fondamentaux.md#listes)
-7. [Tableaux](031_Fondamentaux.md#tableaux)
-8. [Formulaires HTML](031_Fondamentaux.md#formulaires-html)
-9. [Balises sémantiques](031_Fondamentaux.md#balises-sémantiques)
+4. [Commentaires](031_Fondamentaux.md#commentaires)
+5. [Liens et Ancres](031_Fondamentaux.md#liens-et-ancres)
+6. [Images](031_Fondamentaux.md#images)
+7. [Listes](031_Fondamentaux.md#listes)
+8. [Tableaux](031_Fondamentaux.md#tableaux)
+9. [Formulaires HTML](031_Fondamentaux.md#formulaires-html)
+10. [Balises sémantiques](031_Fondamentaux.md#balises-sémantiques)
 
-## Techniques Avancées
+## [Techniques avancées](032_Techniques_avancees.md)
 
-10. Frames et IFrames
-11. Audio et Vidéo
-12. Caractères spéciaux
-13. Commentaires
-14. Doctype et Validation
+11. Frames et IFrames
+12. Audio et Vidéo
+13. [Caractères spéciaux](032_Techniques_avancees.md#caractères-spéciaux)
+14. [Doctype et validation](032_Techniques_avancees.md#doctype-et-validation)
 15. Attributs globaux
 
-## Bonnes Pratiques et Projets
+## [Bonnes Pratiques et Projets](033_Bonnes_pratiques_et_projets.md)
 
-16. Bonnes pratiques
+16. [Bonnes pratiques](033_Bonnes_pratiques_et_projets.md#bonnes-pratiques)
 17. Compatibilité des navigateurs
 18. Optimisation de la performance
 19. Responsive Web Design
