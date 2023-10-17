@@ -185,102 +185,34 @@ Le modèle de boîte CSS est un concept clé pour le positionnement des élémen
 }
 ```
 ## Mise en page de base
-Voici un exemple d'une page HTML de base.
-```HTML
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mise en page de base en CSS</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Mon Site Web</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+Le positionnement en CSS vous permet de contrôler l'emplacement des éléments sur une page web. Il existe plusieurs valeurs de propriété position que vous pouvez utiliser :
 
-    <section class="content">
-        <article>
-            <h2>Titre de l'article</h2>
-            <p>Contenu de l'article.</p>
-        </article>
-        <article>
-            <h2>Un autre article</h2>
-            <p>Contenu de l'autre article.</p>
-        </article>
-    </section>
+- **static** (position statique) : C'est la valeur par défaut. L'élément est positionné en fonction du flux normal de la page.
 
-    <aside>
-        <h3>Barre latérale</h3>
-        <ul>
-            <li><a href="#">Lien 1</a></li>
-            <li><a href="#">Lien 2</a></li>
-            <li><a href="#">Lien 3</a></li>
-        </ul>
-    </aside>
+- **relative** (position relative) : L'élément est positionné par rapport à sa position normale. Vous pouvez utiliser les propriétés top, right, bottom, et left pour ajuster sa position.
 
-    <footer>
-        <p>&copy; 2023 Mon Site Web</p>
-    </footer>
-</body>
-</html>
-```
+- **absolute** (position absolue) : L'élément est positionné par rapport à son premier parent positionné. Si aucun parent n'est positionné, il est positionné par rapport au corps du document.
+
+- **fixed** (position fixe) : L'élément est positionné par rapport à la fenêtre du navigateur, ce qui signifie qu'il reste à la même position même lorsque la page est défilée.
+
+### Float
+Le flottement (ou float) en CSS est principalement utilisé pour mettre en page du texte autour d'une image ou d'un autre élément. Vous pouvez utiliser la propriété float avec les valeurs left ou right pour indiquer dans quelle direction l'élément doit être flotté.
 
 ```CSS
-/* styles.css */
-
-/* Style du header */
-header {
-    background-color: #333; /* Couleur de fond du header */
-    color: #fff; /* Couleur du texte du header */
-    padding: 20px; /* Rembourrage autour du contenu du header */
-}
-
-/* Style de la barre de navigation */
-nav ul {
-    list-style: none; /* Supprimer les puces de liste */
-    padding: 0; /* Supprimer le rembourrage par défaut */
-}
-
-nav li {
-    display: inline; /* Afficher les éléments de navigation en ligne */
-    margin-right: 20px; /* Espacement entre les éléments de navigation */
-}
-
-nav a {
-    text-decoration: none; /* Supprimer la soulignement des liens */
-    color: #fff; /* Couleur du texte des liens */
-}
-
-/* Style du contenu principal */
-.content {
-    width: 70%; /* Largeur du contenu principal */
-    float: left; /* Flotter à gauche pour créer une disposition en colonne */
-    padding: 20px; /* Rembourrage autour du contenu */
-}
-
-/* Style de la barre latérale */
-aside {
-    width: 30%; /* Largeur de la barre latérale */
-    float: left; /* Flotter à gauche pour créer une disposition en colonne */
-    padding: 20px; /* Rembourrage autour du contenu */
-}
-
-/* Style du footer */
-footer {
-    clear: both; /* Effacer les flottements précédents */
-    background-color: #333; /* Couleur de fond du footer */
-    color: #fff; /* Couleur du texte du footer */
-    text-align: center; /* Centrer le texte */
-    padding: 10px; /* Rembourrage autour du contenu du footer */
+.image {
+    float: left; /* Ou float: right; */
 }
 ```
+
+Cela permet aux éléments situés après l'élément flotté de s'ajuster autour de lui.
+
+### Display
+La propriété display en CSS vous permet de contrôler comment un élément est affiché. Voici quelques valeurs courantes :
+
+- **block** : L'élément est affiché comme un bloc et occupe toute la largeur disponible.
+
+- **inline** : L'élément est affiché comme une ligne en ligne avec le texte. Il ne prend pas toute la largeur.
+
+- **inline-block** : L'élément est affiché comme une ligne, mais vous pouvez définir une largeur et une hauteur.
+
+- **none** : L'élément est complètement masqué et n'occupe pas d'espace sur la page.
