@@ -88,7 +88,7 @@ La navigation en HTML se fait grâce à la balise `<a>` et l'attribut `href`. La
 <p>Contenu de la section 1.</p>
 ```
 ## Images
-Une image est affichée grâce à la balise `<img>` et l'attribut `src`.
+Une image est affichée grâce à la balise `<img>` et l'attribut `src`. L'attribut `alt` permet de mettre du texte altérnatif à l'image.
 ```HTML
 <img src="monImg.jpg" alt="Mon Image" width="104" height="142">
 ```
@@ -186,7 +186,7 @@ Un tableau est définit avec la balise `<table>`, les lignes par `<tr>`, les col
 
 
 ## Formulaires HTML
-Un formulaire HTML est créé avec la balise `<form>`, l'action effectuée lors du "submit" est définie avec l'attribut `action`. Un formulaire est composé essentiellement de `<input>` qui peuvent être de plusieurs types.
+Un formulaire HTML est créé avec la balise `<form>`, l'action effectuée lors du "submit" est définie avec l'attribut `action`. Un formulaire est composé essentiellement de `<input>` qui peuvent être de différents types.
 
 ```HTML
 <form action="/validateForm.php">

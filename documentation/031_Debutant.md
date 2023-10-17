@@ -185,6 +185,7 @@ Le modèle de boîte CSS est un concept clé pour le positionnement des élémen
 }
 ```
 ## Mise en page de base
+### Position
 Le positionnement en CSS vous permet de contrôler l'emplacement des éléments sur une page web. Il existe plusieurs valeurs de propriété position que vous pouvez utiliser :
 
 - **static** (position statique) : C'est la valeur par défaut. L'élément est positionné en fonction du flux normal de la page.
