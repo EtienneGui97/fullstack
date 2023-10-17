@@ -1,6 +1,7 @@
 # CSS Avancé
 Ce document contient les techniques avancées du CSS.
 
+## Table des matières
 12. [Animations CSS](#animations-css)
 13. [Préprocesseurs CSS](#préprocesseurs-css)
 14. [Architecture CSS](#architecture-css)
