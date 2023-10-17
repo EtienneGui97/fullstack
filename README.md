@@ -1,5 +1,5 @@
 # Roadmap Fullstack
-Ce répertoire GIT contient les bases théoriques nécessaires pour créer une projet Fullstack.
+Ce répertoire GIT contient les bases théoriques nécessaires pour créer une projet Fullstack. La documentation n'est pas complète mais décrit le principal, pour plus d'information, il faut se référer à la documentation officielle.
 
 Pour créer ce projet, je m'inspire d'une [roadmap](https://roadmap.sh/full-stack).
 
