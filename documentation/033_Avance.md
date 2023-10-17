@@ -1,4 +1,5 @@
-# Niveau Avancé
+# CSS Avancé
+Ce document contient les techniques avancées du CSS.
 
 12. [Animations CSS](#animations-css)
 13. [Préprocesseurs CSS](#préprocesseurs-css)

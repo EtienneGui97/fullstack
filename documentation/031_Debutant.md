@@ -1,4 +1,5 @@
-# Niveau débutant en CSS
+# CSS Débutant
+Ce document contient les fondamentaux du CSS.
 
 ## Table des matières
 1. [Introduction au CSS](#introduction-au-css)

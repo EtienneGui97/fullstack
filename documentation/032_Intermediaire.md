@@ -1,4 +1,5 @@
-# Niveau intermédiaire en CSS
+# CSS Intermédiaire
+Ce document contient les techniques intermédiaires du CSS.
 
 ## Table des matières
 8. [Disposition avancée](#disposition-avancée)

@@ -1,5 +1,5 @@
-# HTML Techniques Avancées
-Ce document contient des techniques avancées HTML.
+# HTML Intermédiaire
+Ce document contient des techniques HTML intermédiaires.
 
 ## Table des matières
 

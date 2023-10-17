@@ -1,4 +1,4 @@
-# HTML Les Fondamentaux
+# HTML Débutant
 Ce document contient les fondamentaux HTML.
 ## Table des matières
 1. [Introduction à HTML](#introduction-à-html)

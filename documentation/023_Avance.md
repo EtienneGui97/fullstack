@@ -1,4 +1,5 @@
-# HTML Bonnes Pratiques et Projets
+# HTML Avancé
+Ce document contient des techniques HTML avancées.
 
 ## Table des matières
 16. [Bonnes pratiques](#bonnes-pratiques)
@@ -6,6 +7,11 @@
 18. Optimisation de la performance
 19. [Responsive Web Design](#responsive-web-design)
 20. Projets personnels
+21. HTML5
+22. Microdonnées et RDFa
+23. Web Components
+24. HTML5 Canvas
+25. Travaillez avec les CMS
 
 ## Bonnes pratiques
 Les bonnes pratiques en HTML sont essentielles pour créer des pages web bien structurées, accessibles et faciles à maintenir. Voici quelques-unes des bonnes pratiques à suivre lorsque vous écrivez du code HTML :
