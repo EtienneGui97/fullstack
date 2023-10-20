@@ -1,11 +1,13 @@
 # TypeScript Intermédiaire
 
-1. [Classes et POO](#classes-et-poo)
-2. [Gestion des erreurs](#gestion-des-erreurs)
-3. Modules et Espace de Noms
-4. [Génériques](#génériques)
-5. Types Avancés
-6. [Décorateurs](#décorateurs)
+## Table des matières
+
+8. [Classes et POO](#classes-et-poo)
+9. [Gestion des erreurs](#gestion-des-erreurs)
+10. Modules et Espace de Noms
+11. [Génériques](#génériques)
+12. Types Avancés
+13. [Décorateurs](#décorateurs)
 
 ## Classes et POO
 En TypeScript, vous pouvez créer des classes typées en définissant la structure de vos classes à l'aide de types ou d'interfaces. Vous pouvez également utiliser l'héritage et les interfaces pour définir des relations entre vos classes. Les classes permettent de créer des objets concrets avec des données et des méthodes associées. Les objets sont créés grâce au constructeur de la classe.

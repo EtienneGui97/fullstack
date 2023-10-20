@@ -1,5 +1,7 @@
 # TypeScript Débutant
 
+## Table des matières
+
 1. [Introduction à TypeScript](#introduction-à-typescript)
 2. [Environnement TypeScipt](#environnement-typescipt)
 3. [Types de Base](#types-de-base)
