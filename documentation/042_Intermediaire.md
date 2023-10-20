@@ -5,7 +5,7 @@
 3. Modules et Espace de Noms
 4. [Génériques](#génériques)
 5. Types Avancés
-6. Décorateurs
+6. [Décorateurs](#décorateurs)
 
 ## Classes et POO
 En TypeScript, vous pouvez créer des classes typées en définissant la structure de vos classes à l'aide de types ou d'interfaces. Vous pouvez également utiliser l'héritage et les interfaces pour définir des relations entre vos classes. Les classes permettent de créer des objets concrets avec des données et des méthodes associées. Les objets sont créés grâce au constructeur de la classe.
@@ -117,4 +117,41 @@ class KeyValue<T, U> {
 const stringAndNumber = new KeyValue("Hello", 42);
 const string1: string = stringAndNumber.getKey();
 const number1: number = stringAndNumber.getValue();
+```
+
+## Décorateurs
+Les décorateurs sont un mécanisme avancé en TypeScript qui permet d'ajouter des métadonnées à des classes, des méthodes, des propriétés, etc. Ils sont souvent utilisés dans les cadres et les bibliothèques, mais vous pouvez également les utiliser dans votre propre code pour ajouter des fonctionnalités personnalisées.
+
+Un décorateur est une fonction qui prend en général trois paramètres :
+
+1. La cible (l'objet sur lequel le décorateur est appliqué, par exemple une classe ou une méthode).
+2. Le nom de la propriété (pour les décorateurs de propriété ou de méthode).
+3. Les arguments du décorateur (des valeurs personnalisées que vous pouvez passer au décorateur).
+
+```ts
+function first() {
+  console.log("first(): factory evaluated");
+  return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+    console.log("first(): called");
+  };
+}
+ 
+function second() {
+  console.log("second(): factory evaluated");
+  return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+    console.log("second(): called");
+  };
+}
+ 
+class ExampleClass {
+  @first()
+  @second()
+  method() {}
+}
+
+// Output
+first(): factory evaluated
+second(): factory evaluated
+second(): called
+first(): called
 ```
