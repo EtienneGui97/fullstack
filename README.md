@@ -11,10 +11,16 @@ Pour créer ce projet, je m'inspire d'une [roadmap](https://roadmap.sh/full-stac
 ## Structure du projet :
 - `/documentation` : Contient toute la base théorique pour créer un projet fullstack
 - `/code` : Contient le code du l'application fullstack
+- `/projet` : Contient les docuements relatifs au projet
 
 ## Technologies et versions
 
-- **Frontend**: Angular
-- **Backend** : Node.js, Express.js
-- **Base de données** : 
+- Vue.js : 3.3.4
+- Pinia : 2.1.7
+- Node.js : 18.18.0
+- Express.js : 4.18.2
+- dotenv : 16.3.1
+- TypeScript : 5.2.2
+- mariadb : 3.2.2
+
 
