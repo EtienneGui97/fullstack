@@ -64,3 +64,9 @@ async function queryDatabase() {
 }
 ```
 Avec ces étapes, vous avez configuré une base de données MariaDB dans votre application Node.js avec TypeScript en utilisant un fichier .env pour stocker des informations sensibles. Vous pouvez désormais interagir avec la base de données en toute sécurité en utilisant les variables d'environnement pour stocker des informations sensibles. Assurez-vous d'adapter le code pour répondre à vos besoins spécifiques en matière de gestion de base de données.
+
+## Prisma
+
+```cmd
+npx prisma migrate dev
+```

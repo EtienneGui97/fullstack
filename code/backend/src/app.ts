@@ -1,6 +1,7 @@
 import express, { Application, Request, Response } from 'express';
 import * as dotenv from 'dotenv';
 import * as mariadb from 'mariadb';
+import { PrismaClient } from '@prisma/client';
 
 dotenv.config();
 
@@ -8,33 +9,45 @@ const app: Application = express();
 
 const PORT: number = 3001;
 
-app.use('/', async (req: Request, res: Response): Promise<void> => {
-    console.log("/db");
-    let conn;
-    try {
-        conn = await pool.getConnection();
-        const rows = await conn.query('SELECT * FROM recipes');
-        res.send(rows);
-    } catch (err) {
-        console.error(err); // Utilisez console.error pour afficher les erreurs
-        throw err;
-    } finally {
-        if (conn) {
-            conn.release(); // Libère la connexion pour d'autres utilisations
-        }
-    }
-});
 
 
 app.listen(PORT, (): void => {
     console.log('SERVER IS UP ON PORT:', PORT);
 });
 
-const pool = mariadb.createPool({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    port: process.env.DB_PORT ? parseInt(process.env.DB_PORT) : undefined,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE,
-    connectionLimit: 5, // Limite de connexions simultanées
-});
+
+
+const prisma = new PrismaClient()
+
+async function main() {
+    await prisma.recipe.create({
+        data: {
+            name: 'Recette 2',
+            description: 'Description de la recette 2',
+            steps: {
+                create: [
+                    {
+                        order: 1,
+                        description: "Etape 1 de la recette 2"
+                    },
+                    {
+                        order: 2, // Ordre de la deuxième étape
+                        description: "Etape 2 de la recette 2"
+                    }
+                ]
+            }
+        }
+    });
+
+    console.log(await prisma.recipe.findMany())
+}
+
+main()
+    .then(async () => {
+        await prisma.$disconnect()
+    })
+    .catch(async (e) => {
+        console.error(e)
+        await prisma.$disconnect()
+        process.exit(1)
+    })
